@@ -42,9 +42,9 @@ public class JournalEntryController2 {
 
     @GetMapping("/{myId}")
     public ResponseEntity<JournalEntry> getJournalEntry(@PathVariable ObjectId myId){
-        Optional<JournalEntry> journalEntry = journalEntryService.findById(myId);
-        if(journalEntry.isPresent()){
-            return new ResponseEntity<>(journalEntry.get(), HttpStatus.OK);
+        JournalEntry journalEntry = journalEntryService.findById(myId).orElse(null);
+        if(journalEntry != null){
+            return new ResponseEntity<>(journalEntry, HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
