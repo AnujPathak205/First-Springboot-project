@@ -21,8 +21,12 @@ public class JournalEntryController2 {
     private JournalEntryService journalEntryService;
 
     @GetMapping
-    public List<JournalEntry> getAll(){
-        return journalEntryService.getAll();
+    public ResponseEntity<?> getAll(){
+        List<JournalEntry> all = journalEntryService.getAll();
+        if(all != null && !all.isEmpty()){
+            return new ResponseEntity<>(all,HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @PostMapping
@@ -47,12 +51,13 @@ public class JournalEntryController2 {
     }
 
     @DeleteMapping("/{myId}")
-    public void deleteJournalEntry(@PathVariable ObjectId myId){
+    public ResponseEntity<?> deleteJournalEntry(@PathVariable ObjectId myId){
         journalEntryService.deleteById(myId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PutMapping("/{myId}")
-    public JournalEntry updateJournalEntry(@PathVariable ObjectId myId,@RequestBody JournalEntry newEntry){
+    public ResponseEntity<JournalEntry> updateJournalEntry(@PathVariable ObjectId myId, @RequestBody JournalEntry newEntry){
         JournalEntry old = journalEntryService.findById(myId).orElse(null);
         if(old != null){
             old.setTitle(newEntry.getTitle() != null && !newEntry.getTitle().equals("") ?
@@ -62,7 +67,8 @@ public class JournalEntryController2 {
                     newEntry.getContent() : old.getContent()
             );
             journalEntryService.saveEntity(old);
+            return new ResponseEntity<>(old,HttpStatus.OK);
         }
-        return old;
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
