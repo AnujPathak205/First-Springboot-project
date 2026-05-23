@@ -2,7 +2,6 @@ package com.anuj.FirstSpringBootProject.service;
 
 import com.anuj.FirstSpringBootProject.entity.User;
 import com.anuj.FirstSpringBootProject.repository.JournalEntryRepository;
-import com.anuj.FirstSpringBootProject.repository.UserRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.anuj.FirstSpringBootProject.entity.JournalEntry;
@@ -35,7 +34,10 @@ public class JournalEntryService {
         return journalEntryRepository.findById(id);
     }
 
-    public void deleteById(ObjectId id){
+    public void deleteById(ObjectId id, String userName){
+        User user = userService.findByUserName(userName);
+        user.getJournalEntries().removeIf(x -> x.getId().equals(id));
+        userService.saveEntity(user);
         journalEntryRepository.deleteById(id);
     }
 }

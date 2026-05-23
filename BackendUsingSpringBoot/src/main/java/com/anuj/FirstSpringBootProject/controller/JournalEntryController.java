@@ -45,8 +45,8 @@ public class JournalEntryController {
         }
     }
 
-    @GetMapping("/{myId}")
-    public ResponseEntity<JournalEntry> getJournalEntry(@PathVariable ObjectId myId){
+    @GetMapping("/{userName}/{myId}")
+    public ResponseEntity<JournalEntry> getJournalEntry(@PathVariable String userName,@PathVariable ObjectId myId){
         JournalEntry journalEntry = journalEntryService.findById(myId).orElse(null);
         if(journalEntry != null){
             return new ResponseEntity<>(journalEntry, HttpStatus.OK);
@@ -55,9 +55,9 @@ public class JournalEntryController {
 
     }
 
-    @DeleteMapping("/{myId}")
-    public ResponseEntity<?> deleteJournalEntry(@PathVariable ObjectId myId){
-        journalEntryService.deleteById(myId);
+    @DeleteMapping("/{userName}/{myId}")
+    public ResponseEntity<?> deleteJournalEntry(@PathVariable String userName,@PathVariable ObjectId myId){
+        journalEntryService.deleteById(myId,userName);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
