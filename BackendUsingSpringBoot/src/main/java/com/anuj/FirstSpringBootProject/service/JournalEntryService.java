@@ -1,6 +1,8 @@
 package com.anuj.FirstSpringBootProject.service;
 
+import com.anuj.FirstSpringBootProject.entity.User;
 import com.anuj.FirstSpringBootProject.repository.JournalEntryRepository;
+import com.anuj.FirstSpringBootProject.repository.UserRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.anuj.FirstSpringBootProject.entity.JournalEntry;
@@ -15,8 +17,14 @@ public class JournalEntryService {
     @Autowired
     private JournalEntryRepository journalEntryRepository;
 
-    public void saveEntity(JournalEntry journalEntry){
-        journalEntryRepository.save(journalEntry);
+    @Autowired
+    private UserService userService;
+
+    public void saveEntity(JournalEntry journalEntry, String userName){
+        User user = userService.findByUserName(userName);
+        JournalEntry saved = journalEntryRepository.save(journalEntry);
+        user.getJournalEntries().add(saved);
+        userService.saveEntity(user);
     }
 
     public List<JournalEntry> getAll(){

@@ -1,7 +1,9 @@
 package com.anuj.FirstSpringBootProject.controller;
 
 import com.anuj.FirstSpringBootProject.entity.JournalEntry;
+import com.anuj.FirstSpringBootProject.entity.User;
 import com.anuj.FirstSpringBootProject.service.JournalEntryService;
+import com.anuj.FirstSpringBootProject.service.UserService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,20 +21,24 @@ public class JournalEntryController {
     @Autowired
     private JournalEntryService journalEntryService;
 
-    @GetMapping
-    public ResponseEntity<?> getAll(){
-        List<JournalEntry> all = journalEntryService.getAll();
+    @Autowired
+    private UserService userService;
+
+    @GetMapping("{userName}")
+    public ResponseEntity<?> getAll(@PathVariable String userName){
+        User user = userService.findByUserName(userName);
+        List<JournalEntry> all = user.getJournalEntries();
         if(all != null && !all.isEmpty()){
             return new ResponseEntity<>(all,HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @PostMapping
-    public ResponseEntity<JournalEntry>  createEntry(@RequestBody JournalEntry newEntry){
+    @PostMapping("{userName}")
+    public ResponseEntity<JournalEntry>  createEntry(@RequestBody JournalEntry newEntry,@PathVariable String userName){
         try{
             newEntry.setDate(LocalDateTime.now());
-            journalEntryService.saveEntity(newEntry);
+            journalEntryService.saveEntity(newEntry,userName);
             return new ResponseEntity<>(newEntry,HttpStatus.CREATED);
         }catch (Exception e){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -57,17 +63,17 @@ public class JournalEntryController {
 
     @PutMapping("/{myId}")
     public ResponseEntity<JournalEntry> updateJournalEntry(@PathVariable ObjectId myId, @RequestBody JournalEntry newEntry){
-        JournalEntry old = journalEntryService.findById(myId).orElse(null);
-        if(old != null){
-            old.setTitle(newEntry.getTitle() != null && !newEntry.getTitle().equals("") ?
-                    newEntry.getTitle() : old.getTitle()
-            );
-            old.setContent(newEntry.getContent() != null && !newEntry.getContent().equals("") ?
-                    newEntry.getContent() : old.getContent()
-            );
-            journalEntryService.saveEntity(old);
-            return new ResponseEntity<>(old,HttpStatus.OK);
-        }
+//        JournalEntry old = journalEntryService.findById(myId).orElse(null);
+//        if(old != null){
+//            old.setTitle(newEntry.getTitle() != null && !newEntry.getTitle().equals("") ?
+//                    newEntry.getTitle() : old.getTitle()
+//            );
+//            old.setContent(newEntry.getContent() != null && !newEntry.getContent().equals("") ?
+//                    newEntry.getContent() : old.getContent()
+//            );
+//            journalEntryService.saveEntity(old, userName);
+//            return new ResponseEntity<>(old,HttpStatus.OK);
+//        }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
