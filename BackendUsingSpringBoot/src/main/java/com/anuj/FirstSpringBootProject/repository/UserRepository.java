@@ -1,0 +1,9 @@
+package com.anuj.FirstSpringBootProject.repository;
+
+import com.anuj.FirstSpringBootProject.entity.User;
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface UserRepository extends MongoRepository<User, ObjectId> {
+
+}
