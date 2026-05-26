@@ -22,14 +22,10 @@ public class JournalEntryService {
 
     @Transactional
     public void saveEntity(JournalEntry journalEntry, String userName){
-        try{
             User user = userService.findByUserName(userName);
             JournalEntry saved = journalEntryRepository.save(journalEntry);
             user.getJournalEntries().add(saved);
             userService.saveEntity(user);
-        }catch (Exception e){
-            System.out.println(e);
-        }
     }
 
     public List<JournalEntry> getAll(){
