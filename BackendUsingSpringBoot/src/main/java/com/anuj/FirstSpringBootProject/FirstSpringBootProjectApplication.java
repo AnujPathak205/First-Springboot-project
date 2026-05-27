@@ -30,6 +30,6 @@ public class FirstSpringBootProjectApplication {
 	@Bean
 	public PlatformTransactionManager ptm(MongoDatabaseFactory mongoDatabaseFactory){
 		return new MongoTransactionManager(mongoDatabaseFactory);
-	}
+	}	
 
 }

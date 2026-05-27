@@ -22,10 +22,15 @@ public class JournalEntryService {
 
     @Transactional
     public void saveEntity(JournalEntry journalEntry, String userName){
+        try{
             User user = userService.findByUserName(userName);
             JournalEntry saved = journalEntryRepository.save(journalEntry);
             user.getJournalEntries().add(saved);
+            user.setUserName(null);
             userService.saveEntity(user);
+        }catch (Exception e){
+            throw new RuntimeException("An error occured while saving the entry"+e);
+        }
     }
 
     public List<JournalEntry> getAll(){
@@ -36,10 +41,15 @@ public class JournalEntryService {
         return journalEntryRepository.findById(id);
     }
 
+    @Transactional
     public void deleteById(ObjectId id, String userName){
-        User user = userService.findByUserName(userName);
-        user.getJournalEntries().removeIf(x -> x.getId().equals(id));
-        userService.saveEntity(user);
-        journalEntryRepository.deleteById(id);
+        try{
+            User user = userService.findByUserName(userName);
+            user.getJournalEntries().removeIf(x -> x.getId().equals(id));
+            userService.saveEntity(user);
+            journalEntryRepository.deleteById(id);
+        }catch (Exception e){
+            throw new RuntimeException("An error occured while saving the entry"+e);
+        }
     }
 }
