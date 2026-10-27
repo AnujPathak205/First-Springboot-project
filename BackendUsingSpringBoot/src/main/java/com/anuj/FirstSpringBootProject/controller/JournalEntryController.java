@@ -34,7 +34,7 @@ public class JournalEntryController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @PostMapping("{userName}")
+    @PostMapping("/{userName}")
     public ResponseEntity<JournalEntry>  createEntry(@RequestBody JournalEntry newEntry,@PathVariable String userName){
         try{
             newEntry.setDate(LocalDateTime.now());
@@ -63,17 +63,17 @@ public class JournalEntryController {
 
     @PutMapping("/{myId}")
     public ResponseEntity<JournalEntry> updateJournalEntry(@PathVariable ObjectId myId, @RequestBody JournalEntry newEntry){
-//        JournalEntry old = journalEntryService.findById(myId).orElse(null);
-//        if(old != null){
-//            old.setTitle(newEntry.getTitle() != null && !newEntry.getTitle().equals("") ?
-//                    newEntry.getTitle() : old.getTitle()
-//            );
-//            old.setContent(newEntry.getContent() != null && !newEntry.getContent().equals("") ?
-//                    newEntry.getContent() : old.getContent()
-//            );
-//            journalEntryService.saveEntity(old, userName);
-//            return new ResponseEntity<>(old,HttpStatus.OK);
-//        }
+        JournalEntry old = journalEntryService.findById(myId).orElse(null);
+        if(old != null){
+            old.setTitle(newEntry.getTitle() != null && !newEntry.getTitle().equals("") ?
+                    newEntry.getTitle() : old.getTitle()
+            );
+            old.setContent(newEntry.getContent() != null && !newEntry.getContent().equals("") ?
+                    newEntry.getContent() : old.getContent()
+            );
+            journalEntryService.saveEntity(old);
+            return new ResponseEntity<>(old,HttpStatus.OK);
+        }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
