@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_URL}
+      auto-index-creation: true
+
+server:
+  port: 8080

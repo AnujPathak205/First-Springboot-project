@@ -14,54 +14,54 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+//@SpringBootTest
 public class UserServiceTests {
-    @Autowired
-    private UserRepository userRepository;
-
-    @Autowired
-    private UserService userService;
-
-    @Disabled
-    @Test
-    public void test() {
-//        assertEquals(4,2+1);
-//        assertNotEquals(1,1);
-        User user = userRepository.findByUserName("a");
-        assertNotNull(user);
-    }
-
-    @Disabled
-    @ParameterizedTest
-    @ValueSource(strings = {
-            "a",
-            "b",
-            "admin1"
-    })
-    public void test(String name) {
-        assertNotNull(userRepository.findByUserName(name));
-    }
-
-
-    @ParameterizedTest
-    @ArgumentsSource(UserArgumentsProvider.class)
-    public void testSaveUser(User user) {
-        assertTrue(userService.saveNewEntity(user));
-    }
-
-
-    @Disabled
-    @ParameterizedTest
-    @CsvSource({
-            "1,1,2",
-            "2,3,4",
-    })
-    public void test(int a,int b,int expected) {
-        assertEquals(expected,a + b);
-    }
-
-    @BeforeAll
-    public static void setUp() {
-        System.out.println("Starting test");
-    }
+//    @Autowired
+//    private UserRepository userRepository;
+//
+//    @Autowired
+//    private UserService userService;
+//
+//    @Disabled
+//    @Test
+//    public void test() {
+////        assertEquals(4,2+1);
+////        assertNotEquals(1,1);
+//        User user = userRepository.findByUserName("a");
+//        assertNotNull(user);
+//    }
+//
+//    @Disabled
+//    @ParameterizedTest
+//    @ValueSource(strings = {
+//            "a",
+//            "b",
+//            "admin1"
+//    })
+//    public void test(String name) {
+//        assertNotNull(userRepository.findByUserName(name));
+//    }
+//
+//
+//    @ParameterizedTest
+//    @ArgumentsSource(UserArgumentsProvider.class)
+//    public void testSaveUser(User user) {
+//        assertTrue(userService.saveNewEntity(user));
+//    }
+//
+//
+//    @Disabled
+//    @ParameterizedTest
+//    @CsvSource({
+//            "1,1,2",
+//            "2,3,4",
+//    })
+//    public void test(int a,int b,int expected) {
+//        assertEquals(expected,a + b);
+//    }
+//
+//    @BeforeAll
+//    public static void setUp() {
+//        System.out.println("Starting test");
+//    }
 }

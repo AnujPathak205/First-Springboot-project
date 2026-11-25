@@ -22,25 +22,21 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class UserDetailsServiceImplTest {
-    @Mock
-    private UserRepository userRepository;
-
-    @InjectMocks
-    private UserService userService;
-
-    @Test
-    void loadUserByUsernameTest() {
-//        when(userRepository.findByUserName(ArgumentMatchers.anyString()))
+//    @Mock
+//    private UserRepository userRepository;
+//
+//    @InjectMocks
+//    private UserService userService;
+//
+//    @Test
+//    void loadUserByUsernameTest() {
+//        when(userRepository.findByUserName(anyString()))
 //                .thenReturn(User.builder().userName("A").roles(List.of("USER")).password("A").build());
 //
-//        UserDetails user = userDetailsService.loadUserByUsername("A");
-//        Assertions.assertNotNull(user);
+//        User user = userService.findByUserName("A");
+//        User user2 = userService.findByUserName("B");
 //
-//        userService.findByUserName("A");
-//
-//        verify(userRepository,never()).deleteByUserName("A");
-
-
-    }
+//        verify(userRepository,times(2)).findByUserName(anyString());
+//    }
 
 }

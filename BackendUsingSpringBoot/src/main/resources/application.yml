@@ -1,0 +1,8 @@
+#spring.data.mongodb.uri=${MONGO_URL}
+#spring.data.mongodb.auto-index-creation=true
+##spring.mongodb.uri=mongodb://localhost:27017/journaldb
+##logging.level.org.springframework.security=DEBUG
+
+spring:
+  profiles:
+    active: dev
