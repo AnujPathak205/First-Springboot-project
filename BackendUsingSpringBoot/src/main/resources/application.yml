@@ -8,8 +8,6 @@ spring:
     active: dev
 
 logging:
-  file:
-    path: logs
   level:
     root: ERROR
     com:

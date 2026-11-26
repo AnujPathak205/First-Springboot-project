@@ -1,0 +1,4 @@
+2026-11-26-26 16:38:36 INFO  [main] c.a.F.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 18252 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-26-26 16:38:36 DEBUG [main] c.a.F.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-26-26 16:38:36 INFO  [main] c.a.F.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-26-26 16:38:39 INFO  [main] c.a.F.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 3.9 seconds (process running for 4.253)
