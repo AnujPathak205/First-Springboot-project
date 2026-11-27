@@ -1,5 +1,6 @@
 package com.anuj.FirstSpringBootProject.controller;
 
+import com.anuj.FirstSpringBootProject.cache.AppCache;
 import com.anuj.FirstSpringBootProject.entity.JournalEntry;
 import com.anuj.FirstSpringBootProject.entity.User;
 import com.anuj.FirstSpringBootProject.service.UserService;
@@ -15,6 +16,9 @@ import java.util.List;
 public class AdminController {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private AppCache appCache;
 
     @GetMapping("/all-users")
     public ResponseEntity<?> getAllUsers() {
@@ -37,5 +41,10 @@ public class AdminController {
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
+    }
+
+    @GetMapping("clear-app-cache")
+    public void clearAppCache() {
+        appCache.init();
     }
 }
