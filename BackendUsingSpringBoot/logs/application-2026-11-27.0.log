@@ -1,0 +1,572 @@
+2026-11-27 10:29:16,692 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 8900 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:29:16,693 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:29:16,694 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:29:24,606 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field weatherService in com.anuj.FirstSpringBootProject.controller.WeatherController required a bean of type 'com.anuj.FirstSpringBootProject.service.WeatherService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.anuj.FirstSpringBootProject.service.WeatherService' in your configuration.
+
+2026-11-27 10:29:29,250 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 21348 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:29:29,253 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:29:29,254 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:29:34,126 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field weatherService in com.anuj.FirstSpringBootProject.controller.WeatherController required a bean of type 'com.anuj.FirstSpringBootProject.service.WeatherService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.anuj.FirstSpringBootProject.service.WeatherService' in your configuration.
+
+2026-11-27 10:31:26,406 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 24708 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:31:26,410 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:31:26,410 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:31:30,814 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restTemplate in com.anuj.FirstSpringBootProject.service.WeatherService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2026-11-27 10:36:35,429 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 10336 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:36:35,433 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:36:35,434 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:36:51,605 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 17.388 seconds (process running for 18.161)
+2026-11-27 10:37:58,272 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+	at java.base/java.lang.String.replace(String.java:3177)
+	at com.anuj.FirstSpringBootProject.service.WeatherService.getWeatherResponse(WeatherService.java:23)
+	at com.anuj.FirstSpringBootProject.controller.WeatherController.getWeather(WeatherController.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-11-27 10:39:11,046 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 22292 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:39:11,050 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:39:11,052 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:39:19,627 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 9.888 seconds (process running for 11.373)
+2026-11-27 10:40:47,817 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+	at java.base/java.lang.String.replace(String.java:3177)
+	at com.anuj.FirstSpringBootProject.service.WeatherService.getWeatherResponse(WeatherService.java:23)
+	at com.anuj.FirstSpringBootProject.controller.WeatherController.getWeather(WeatherController.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-11-27 10:41:41,623 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 11100 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:41:41,624 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:41:41,625 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:41:50,109 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 9.398 seconds (process running for 9.939)
+2026-11-27 10:41:55,062 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+	at java.base/java.lang.String.replace(String.java:3177)
+	at com.anuj.FirstSpringBootProject.service.WeatherService.getWeatherResponse(WeatherService.java:24)
+	at com.anuj.FirstSpringBootProject.controller.WeatherController.getWeather(WeatherController.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-11-27 10:42:44,444 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 11068 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:42:44,449 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:42:44,451 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:42:51,668 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 8.186 seconds (process running for 8.714)
+2026-11-27 10:43:46,804 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 17576 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:43:46,807 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:43:46,809 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:43:57,565 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 11.957 seconds (process running for 12.899)
+2026-11-27 10:45:52,532 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 7408 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:45:52,537 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:45:52,538 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:45:58,923 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 7.51 seconds (process running for 8.247)
+2026-11-27 10:49:53,571 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 23472 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:49:53,576 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:49:53,577 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:50:01,946 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 9.509 seconds (process running for 10.072)
+2026-11-27 10:51:15,384 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 16476 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:51:15,386 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:51:15,386 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:51:21,065 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 6.628 seconds (process running for 7.154)
+2026-11-27 10:51:25,139 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 3352 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:51:25,143 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:51:25,144 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:51:35,492 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 11.563 seconds (process running for 12.288)
+2026-11-27 10:52:23,007 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 25632 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:52:23,010 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:52:23,012 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:52:32,785 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 10.868 seconds (process running for 11.62)
+2026-11-27 10:55:03,110 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 20892 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:55:03,112 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:55:03,113 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:55:13,008 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 10.853 seconds (process running for 11.384)
+2026-11-27 10:55:47,539 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 16604 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:55:47,541 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:55:47,542 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:55:57,077 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 10.559 seconds (process running for 11.071)
+2026-11-27 10:56:23,195 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 22824 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 10:56:23,198 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 10:56:23,199 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 10:56:32,723 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 10.523 seconds (process running for 11.242)
+2026-11-27 11:00:32,619 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 24192 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 11:00:32,620 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 11:00:32,621 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 11:00:42,135 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 10.478 seconds (process running for 11.03)
+2026-11-27 11:02:49,363 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 16956 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 11:02:49,367 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 11:02:49,368 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 11:02:55,846 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 7.444 seconds (process running for 7.982)
+2026-11-27 11:03:00,899 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 4684 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 11:03:00,903 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 11:03:00,904 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 11:03:09,563 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 9.666 seconds (process running for 10.198)
+2026-11-27 11:03:12,203 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 6112 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 11:03:12,206 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 11:03:12,207 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 11:03:18,676 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 7.394 seconds (process running for 7.918)
+2026-11-27 11:08:16,230 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 2176 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 11:08:16,232 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 11:08:16,234 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 11:08:22,167 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 6.955 seconds (process running for 7.514)
+2026-11-27 12:33:29,166 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 8972 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 12:33:29,170 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 12:33:29,171 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 12:33:40,736 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 12.6 seconds (process running for 13.153)
+2026-11-27 17:18:42,913 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 8884 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 17:18:42,915 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 17:18:42,915 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 17:18:51,326 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 21904 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 17:18:51,328 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 17:18:51,329 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 17:21:33,230 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 6636 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 17:21:33,232 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 17:21:33,233 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 17:23:59,067 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 146.532 seconds (process running for 146.977)
+2026-11-27 17:24:07,381 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 17188 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 17:24:07,382 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 17:24:07,383 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 17:24:10,596 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 3.807 seconds (process running for 4.133)
+2026-11-27 17:24:26,851 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "java.util.Map.replace(Object, Object)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "java.util.Map.replace(Object, Object)" is null
+	at com.anuj.FirstSpringBootProject.service.WeatherService.getWeatherResponse(WeatherService.java:26)
+	at com.anuj.FirstSpringBootProject.controller.WeatherController.getWeather(WeatherController.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-11-27 18:03:08,110 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 21420 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 18:03:08,112 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 18:03:08,113 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 18:03:17,875 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 10.711 seconds (process running for 11.246)
+2026-11-27 18:24:42,461 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Starting FirstSpringBootProjectApplication using Java 23.0.1 with PID 17080 (C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot\target\classes started by anujp in C:\Users\anujp\OneDrive\Desktop\Minor Project\FirstSpringBootProject\BackendUsingSpringBoot)
+2026-11-27 18:24:42,465 DEBUG com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-11-27 18:24:42,466 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - The following 1 profile is active: "dev"
+2026-11-27 18:24:50,401 INFO  com.anuj.FirstSpringBootProject.FirstSpringBootProjectApplication - Started FirstSpringBootProjectApplication in 8.929 seconds (process running for 9.494)
